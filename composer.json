@@ -2,7 +2,8 @@
     "name": "rey/orm",
     "type": "library",
     "description": "Rey Bitrix ORM",
-    "keywords": [],
+    "keywords": ["bitrix", "orm"],
+    "homepage": "https://github.com/Olegator8800/ReyOrm",
     "license": "MIT",
     "authors": [
         {
