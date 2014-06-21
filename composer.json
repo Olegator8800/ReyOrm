@@ -1,0 +1,21 @@
+{
+    "name": "rey/orm",
+    "type": "library",
+    "description": "Rey Bitrix ORM",
+    "keywords": [],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Oleg Filimoshin",
+            "email": "Olegator8800@yandex.ru"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-0": { "Rey\\Orm\\": "" }
+    },
+    "target-dir": "rey/orm",
+    "minimum-stability": "dev"
+}
