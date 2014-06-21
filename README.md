@@ -18,7 +18,7 @@ via composer:
 in your code add:
 
 ``` php
-    require_once __DIR__ . '/vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 ```
 
 
@@ -31,36 +31,36 @@ Examples of work with ReyOrm (aflfa version):
 Сode class repository for news:
 
 ``` php
-    use Rey\Orm\Repository\BaseRepository;
-    use CIBlockElement;
+use Rey\Orm\Repository\BaseRepository;
+use CIBlockElement;
 
-    class NewsRepository extends BaseRepository
+class NewsRepository extends BaseRepository
+{
+    public function getAllNews()
     {
-        public function getAllNews()
-        {
-            $r = CIBlockElement::getList(array(), array('IBLOCK_ID' => $this->getMetadata()->get('iblock_id')));
+        $r = CIBlockElement::getList(array(), array('IBLOCK_ID' => $this->getMetadata()->get('iblock_id')));
 
-            return $r;
-        }
+        return $r;
     }
+}
 ```
 
 User repository can structure business logic in classes.
 
 ``` php
-    $config = new Rey\Orm\Configuration();
+$config = new Rey\Orm\Configuration();
 
-    $config->setCacheDir(__DIR__ . '/cache/orm');
-    $config->setRepositoryClass('News', 'NewsRepository');
+$config->setCacheDir(__DIR__ . '/cache/orm');
+$config->setRepositoryClass('News', 'NewsRepository');
 
-    $em = new Rey\Orm\EntityManager($config);
+$em = new Rey\Orm\EntityManager($config);
 
-    $newsRepository = $em->getRepository('News');
-    $newsList = $newsRepository->getAllNews();
+$newsRepository = $em->getRepository('News');
+$newsList = $newsRepository->getAllNews();
 
-    while($newsItem = $newsList->Fetch()) {
-        echo $newsItem['Title'] . '</ br>';
-    }
+while($newsItem = $newsList->Fetch()) {
+    echo $newsItem['Title'] . '</ br>';
+}
 ```
 
 When calling $em->getRepository('News') will be searched for the information block code News.
