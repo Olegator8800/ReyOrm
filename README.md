@@ -6,6 +6,8 @@ What is ReyOrm?
 
 The experimental version ORM for Bitrix.
 
+[![Build Status](https://travis-ci.org/Olegator8800/ReyOrm.svg?branch=master)](https://travis-ci.org/Olegator8800/ReyOrm)
+
 
 Installation
 ------------
