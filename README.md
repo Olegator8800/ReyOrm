@@ -4,7 +4,7 @@ README
 What is ReyOrm?
 -----------------
 
-The experimental version orm for Bitrix.
+The experimental version ORM for Bitrix.
 
 
 Installation
