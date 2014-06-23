@@ -25,7 +25,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 Example
 ------------
 
-Examples of work with ReyOrm (aflfa version):
+Examples of work with ReyOrm (alfa version):
 
 
 Сode class repository for news:
